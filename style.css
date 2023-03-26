@@ -33,6 +33,7 @@ h2{
   }
   ul li a{
 	color: white;
+	font-size: 30px;
   }
   .section{
 	background: rgb(51, 208, 233);
@@ -48,9 +49,9 @@ h2{
   /* body{
 	background: rgb(51, 208, 233);
   } */
-  p.about-me{
+  p{
 	/* border-style: solid; */
-	font-size: large;
+	font-size: 25px;
 }
 .section img{
 	object-fit:cover;

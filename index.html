@@ -8,7 +8,7 @@
 <body>
 <div id="menu">
   <h2>Sylvester Stallone</h2>
-  <img src="C:\Users\nita1\Desktop\box2.jpg" style="width:60px;height:60px;float:right">
+  <img src="C:\Users\nita1\Desktop\box2.jpg" style="width:60px;height:60px;float:right; margin-right:50px;">
   <ul class="nav nav-tabs">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
@@ -37,7 +37,17 @@
 <!-- </center> -->
 <br>
 <p class="about-me">
-  Sylvester Gardenzio Stallone was born July 6, 1946 is an American actor and filmmaker. After his beginnings as a struggling actor for a number of years upon arriving to New York City in 1969 and later Hollywood in 1974, he won his first critical acclaim as an actor for his co-starring role as Stanley Rosiello in The Lords of Flatbush.
+  <br>
+  Sylvester Stallone is an American actor, writer, and director. He was born on July 6, 1946, in New York City. Stallone is best known for his roles in the Rocky and Rambo film series, which he also wrote and directed. He has also starred in other movies such as "Cliffhanger," "Demolition Man," "The Expendables," and "Creed."
+</br>
+</br>
+Stallone began his career in the film industry in the early 1970s, appearing in small roles in various movies and TV shows. He gained fame in 1976 when he wrote and starred in the movie "Rocky," which won three Academy Awards, including Best Picture. Stallone's portrayal of Rocky Balboa became an iconic character in American cinema.
+<br>
+</br>
+In addition to his work in film, Stallone has also written several screenplays and directed numerous movies. He continues to act and produce movies, and his career has spanned over five decades.
+</br>
+</p>
+</p>
 </p>
 </br>
 </section>
@@ -95,53 +105,79 @@
 
 <h1>scan my code</h1>
 <br/>
+<center>
+  <img class="qr_image" width="280" height="280" src="https://qrfree.kaywa.com/?l=1&amp;s=8&amp;d=https%3A%2F%2Fweb-development-environments-2023.github.io%2F206102519%2F" alt="QRCode" style="display:inline">
+</center>
 <br/>
 <br/>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
+<h1>Question&Answers</h1>
+<p>
+  web 1.0 was esbalished in 1980 and also known as a static web what means "read only", th infromation was not shared
+  and was mostly consumed. In contrast in web 2.0 and web 3.0 the pages are more dynamic and shared between people so the pages
+  are more interactive. 
+</p>
+<p>
+  web 2.0 and web 3.0 developed blogs and chat in social media in contrast web 1.0 is static and only represent html pages
+
+</p>
+<p>
+  web 3.0 use machine learning technology and natural languge to make more presonlized nature for the user and i contrast
+  in web 2.0 there is "invation" to the privacy of the user. the main idea here is that web 3.0 is more secure then web 2.0
+</p>
+<br>
+<p>
+  use case 1: if you search for wikipedia page in web 1.0 you will only be able to read it and in web 2.0 and web 3.0
+  you can share it and edit it
+</p>
+<p>
+  use case 2: i search for information on plastation 1. if i want to ask a question on chat about the product i will be able to do
+  only in web 2.0 and web 3.0
+</p>
+<p>
+  use case 3: i want to do cyber attack and im in the era of web 2.0. all the information is centerelized in one place
+  so i only have to know the code for decription from one of the computer that connects to the server. In contrast in web3.0
+  the information is not centerlized in fixed place so i will have to work very hard and waste a lot time for decryption.
+</p>
+</br>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h1>contact me</h1>
-<br/>
-<br/>
+<center>
+  <form action="mailto:yakoby@post.bgu.ac.il" method="post" enctype="text/plain">
+    <p>
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" required="">
+  </p>
+  <p>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" required="">
+  </p>
+  <p>
+    <label for="message">message</label>
+    <textarea id="message" name="body" rows="5" cols="30" placeholder="Your Message"></textarea>
+  </p>
+  <p>
+    <label for="emoji">Select an Emoji:</label>
+		<select id="emoji" name="emoji" onchange="putemoji()">
+			<option value=""></option>
+			<option value="❤">❤</option>
+      <option value="😀">😀</option>
+			<option value="👍">👍</option>
+			<option value="🎉">🎉</option>
+      <option value="😂">😂</option>
+		</select>
+		<input type="submit" value="Send Email">
+    <input type="reset" value="Clear">
+  </p>
+   </form>
+  </center>
 <br/>
 </section>
 
@@ -161,5 +197,19 @@ $(function(){
  </script>
  <div id="fb-root"></div>
  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="PqhlGkyt"></script>
+ <!-- <script type="text/javascript">
+  // Get the message input and the add-emoji button
+  const messageInput = document.getElementById('message');
+  const addEmojiButton = document.getElementById('add-emoji');
+  addEmojiButton.addEventListener('click', () => {
+   messageInput.value += "\uD83D\uDE00";});
+ </script> -->
+ <script>
+  function putemoji() {
+    var message = document.getElementById("message");
+    var emoji = document.getElementById("emoji").value;
+    message.value += emoji;
+  }
+</script>
 </body>
 </html>
