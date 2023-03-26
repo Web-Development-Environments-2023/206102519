@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<!-- <title>Sylvester Stallone</title> -->
 </head>
 <body>
 <div id="menu">
+  <h2>Sylvester Stallone</h2>
+  <img src="C:\Users\nita1\Desktop\box2.jpg" style="width:60px;height:60px;float:right">
+  <ul class="nav nav-tabs">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -12,6 +17,7 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
+  </ul>
 </div>
 		  
 <section id="about" class="section">
@@ -25,105 +31,69 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
+<!-- <center> -->
+<h1>about me</h1>
+<!-- </center> -->
+<br>
+<p class="about-me">
+  Sylvester Gardenzio Stallone was born July 6, 1946 is an American actor and filmmaker. After his beginnings as a struggling actor for a number of years upon arriving to New York City in 1969 and later Hollywood in 1974, he won his first critical acclaim as an actor for his co-starring role as Stanley Rosiello in The Lords of Flatbush.
+</p>
+</br>
 </section>
 
 <section id="photos" class="section">
 <br/>
 <br/>
+
+<h1>my photos</h1>
+<br/>
+<div class="gallery">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1187066325.jpg" alt="Sylvester">
+  <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/01/1452083424-rambo-sylvester-stallone.jpg?crop=0.75xw:1xh;center,top&resize=1200:*" alt="Sylvester">
+  <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F07%2F31%2Fsylvester-stallone-rocky-073122.jpg" alt="rocky">
+  <img src="https://prod-images.tcm.com/Master-Profile-Images/SylvesterStallone.182828.1.jpg" alt="rocky2">
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="playlist" class="section">
+
+
+<h1>my playlist</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
+<div class="music">
+ 
+<iframe  src="https://www.youtube.com/embed/_qDML_BCju8" title="Survivor - Eye Of The Tiger (Lyrics)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/eMhDQFLwrAA" title="ROCKY II | Rocky&#39;s Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/0MxAYAPWsFQ" title="Rambo - &quot;It´s a Long Road&quot; song  (Legendado)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
 <br/>
+<h1>give me a like</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
+<center>
+  <div class="fb-like" data-href="https://www.facebook.com/Sylvester-Stallone-102651859317746" data-width="400" data-layout="" data-action="" data-size="" data-share="true"></div>
+</center>
 <br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+
+<h1>scan my code</h1>
 <br/>
 <br/>
 <br/>
@@ -169,7 +139,7 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<h1>contact me</h1>
 <br/>
 <br/>
 <br/>
@@ -189,5 +159,7 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <div id="fb-root"></div>
+ <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="PqhlGkyt"></script>
 </body>
 </html>
